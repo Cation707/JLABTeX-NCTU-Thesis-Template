@@ -1,0 +1,644 @@
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2019.11.14)  17 NOV 2019 21:01
+entering extended mode
+**./coverInner.tex
+(coverInner.tex
+LaTeX2e <2019-10-01> patch level 3
+
+! LaTeX Error: Environment titlepage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{titlepage}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \begin{center}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--2
+[] 
+ []
+
+! Undefined control sequence.
+l.3     \LARGE
+              \selectfont \titleCh \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3     \LARGE\selectfont \titleCh
+                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     \LARGE\selectfont \titleCh \\
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<recently read> \LARGE 
+                       
+l.5     \LARGE
+               \textbf{\titleEn} \\[1cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \titleEn 
+                         
+l.5     \LARGE \textbf{\titleEn}
+                                 \\[1cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.7     {\TSzFourteen
+                     \selectfont
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+Missing character: There is no 研 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 究 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 生 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ： in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.9     研究生： & \studentCh
+                          & \hspace{3cm} & Student： & \studentEn \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ： in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.9 ...ntCh & \hspace{3cm} & Student： & \studentEn
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 指 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 導 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 教 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 授 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ： in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.10     指導教授： & \advisorCh
+                            & \hspace{3cm} & Advisor： & \advisorEn \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ： in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.10 ...rCh & \hspace{3cm} & Advisor： & \advisorEn
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 指 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 導 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 教 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 授 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ： in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.11     指導教授： & \CoadvisorCh
+                              & \hspace{3cm} & Advisor： & \CoadvisorEn \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ： in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.11 ...h & \hspace{3cm} & Advisor： & \CoadvisorEn
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (136.3383pt too wide) in paragraph at lines 8--13
+ [][] 
+ []
+
+! Undefined control sequence.
+l.14     \universityCh
+                       \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14     \universityCh \\
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<recently read> \instituteCh 
+                             
+l.15     \instituteCh
+                      \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15     \instituteCh \\
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no 碩 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 士 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 論 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 文 in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (11.2pt too wide) in paragraph at lines 16--16
+ []\TU/lmr/m/n/10 碩士論文 
+ []
+
+
+! LaTeX Error: Environment singlespace undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     \begin{singlespace}
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.19     {\TSzTwelveTwenty
+                          \selectfont A Thesis \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (7.5pt too wide) in paragraph at lines 19--19
+ []\TU/lmr/m/n/10 A 
+ []
+
+
+Overfull \hbox (20.55pt too wide) in paragraph at lines 19--19
+ \TU/lmr/m/n/10 The- 
+ []
+
+
+Overfull \hbox (10.66pt too wide) in paragraph at lines 19--19
+ \TU/lmr/m/n/10 sis 
+ []
+
+! Undefined control sequence.
+l.20     Submitted to \instituteEn
+                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (45.57pt too wide) in paragraph at lines 20--20
+ []\TU/lmr/m/n/10 Submitted 
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 20--20
+ \TU/lmr/m/n/10 to 
+ []
+
+! Undefined control sequence.
+<recently read> \collegeEn 
+                           
+l.21     \collegeEn
+                    \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21     \collegeEn \\
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<recently read> \universityEn 
+                              
+l.22     \universityEn
+                       \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22     \universityEn \\
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (8.34pt too wide) in paragraph at lines 23--23
+ []\TU/lmr/m/n/10 in 
+ []
+
+
+Overfull \hbox (18.78pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 Par- 
+ []
+
+
+Overfull \hbox (14.45pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 tial 
+ []
+
+
+Overfull \hbox (17.37pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 Ful- 
+ []
+
+
+Overfull \hbox (14.45pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 fill- 
+ []
+
+
+Overfull \hbox (21.94pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 ment 
+ []
+
+
+Overfull \hbox (8.06pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 of 
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 the 
+ []
+
+
+Overfull \hbox (15.13pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 Re- 
+ []
+
+
+Overfull \hbox (25.31pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 quire- 
+ []
+
+
+Overfull \hbox (25.88pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 ments 
+ []
+
+
+Overfull \hbox (11.98pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 for 
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 the 
+ []
+
+
+Overfull \hbox (15.41pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 De- 
+ []
+
+
+Overfull \hbox (17.8pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 gree 
+ []
+
+
+Overfull \hbox (8.06pt too wide) in paragraph at lines 23--23
+ \TU/lmr/m/n/10 of 
+ []
+
+! Undefined control sequence.
+<recently read> \degree 
+                        
+l.24     \degree
+                 \\[2.5cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24     \degree \\
+                   [2.5cm]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.25     \defenseMonthEn
+                        {} \defenseYear \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25     \defenseMonthEn{} \defenseYear
+                                        \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25     \defenseMonthEn{} \defenseYear \\
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<recently read> \studentEn 
+                           
+l.26     \studentEn
+                   , Taiwan, Republic of China} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (2.78pt too wide) in paragraph at lines 26--26
+ []\TU/lmr/m/n/10 , 
+ []
+
+
+Overfull \hbox (17.5pt too wide) in paragraph at lines 26--26
+ \TU/lmr/m/n/10 Tai- 
+ []
+
+
+Overfull \hbox (20.28pt too wide) in paragraph at lines 26--26
+ \TU/lmr/m/n/10 wan, 
+ []
+
+
+Overfull \hbox (15.13pt too wide) in paragraph at lines 26--26
+ \TU/lmr/m/n/10 Re- 
+ []
+
+
+Overfull \hbox (20.01pt too wide) in paragraph at lines 26--26
+ \TU/lmr/m/n/10 pub- 
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 26--26
+ \TU/lmr/m/n/10 lic 
+ []
+
+
+Overfull \hbox (8.06pt too wide) in paragraph at lines 26--26
+ \TU/lmr/m/n/10 of 
+ []
+
+
+Overfull \hbox (26.12pt too wide) in paragraph at lines 26--26
+ \TU/lmr/m/n/10 China 
+ []
+
+
+! LaTeX Error: \begin{center} on input line 2 ended by \end{singlespace}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27     \end{singlespace}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--33
+[] 
+ []
+
+! Undefined control sequence.
+l.34     {\TSzSixteen
+                     \selectfont 中 華 民 國  一  Ｏ  八  年  十  一  月}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 中 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 華 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 民 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 國 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 一 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no Ｏ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 八 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 年 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 十 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 一 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 月 in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 中 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 華 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 民 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 國 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 一 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 Ｏ 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 八 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 年 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 十 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 一 
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 34--35
+ \TU/lmr/m/n/10 月 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{titlepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 \end{titlepage}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> ./coverInner.tex
+                    
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 28 strings out of 427240
+ 399 string characters out of 3145703
+ 68039 words of memory out of 3000000
+ 4606 multiletter control sequences out of 15000+200000
+ 3656 words of font info for 16 fonts, out of 3000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 19i,6n,12p,90b,175s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.

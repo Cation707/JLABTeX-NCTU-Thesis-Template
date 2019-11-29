@@ -1,0 +1,221 @@
+%------------------------------------------------------------------
+%%-------------Advanced Settings For Jlab Thesis Template ---------
+
+%---------------------------------------------------------------------------------------
+%------------------microtype,titlesec,titledoc, etooboox, addtoc -----------------------
+%------are used for customisable sets of fonts, and all micro-typographic aspects-------
+%---------------------------------------------------------------------------------------
+\usepackage{lipsum} %Package used to genrate random text for template only
+
+\usepackage{microtype}
+\usepackage[pagestyles, explicit]{titlesec}%
+\usepackage{titletoc}%
+\usepackage{appendix}
+
+%\usepackage{tocloft}
+%\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % for parts
+%\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % for chapters
+
+%\usepackage{tocloft}
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+%\usepackage{apptools}
+\usepackage{etoolbox}
+\newbool{addtoc}%initial value:  false
+
+%------------------------------------------------------------------------------------
+%-------------Display the word Chapter before the chapter number---------------------
+%------------------------------------------------------------------------------------
+
+\begin{comment}
+
+\titleformat{name = \chapter}[display]
+\IfAppendix{
+	{\Large\vskip-1\baselineskip}% (vskip-number) allows you to adjust the margin from the top of the page
+	{\bfseries\LARGE\appendixname~\thechapter}
+%	{}
+	{0.5pc}
+	{\vspace{0.5pc}\bfseries\itshape\Huge#1}%
+	\titlespacing{\chapter}{0pt}{0\baselineskip}{0\baselineskip}
+}{
+	{\Large\vskip-1\baselineskip}% (vskip-number) allows you to adjust the margin from the top of the page
+	{\bfseries\LARGE\chaptername~\thechapter}
+	%{}
+	{0.5pc}
+	{\vspace{0.5pc}\bfseries\itshape\Huge#1}%
+	\titlespacing{\chapter}{0pt}{0\baselineskip}{0\baselineskip}
+}
+
+\end{comment}
+%\titleformat{name = \chapter}[display]
+%{\Large\vskip-1\baselineskip}% (vskip-number) allows you to adjust the margin from the top of the page
+%{\IfAppendix{\bfseries\LARGE\appendixname~\thechapter}{\bfseries\LARGE\chaptername~\thechapter}}
+%%{\bfseries\LARGE\chaptername~\thechapter}
+%%{}
+%{0.5pc}
+%{\vspace{0.5pc}\bfseries\itshape\Huge#1}%
+%\titlespacing{\chapter}{0pt}{0\baselineskip}{0\baselineskip}
+
+
+\makeatletter
+\titleformat{name = \chapter}[display]
+{\Large\vskip-1.25\baselineskip}% 
+{\bfseries\LARGE\@chapapp\ \thechapter\quad}% 
+{0.5pc}% 
+{\vspace{0.5pc}\bfseries\itshape\Huge#1}%
+\titlespacing{\chapter}{0pt}{0\baselineskip}{1.5\baselineskip}
+\makeatother
+
+%------Settings for numberless chapters(Acknoledgement,LOF,LOT,etc)------
+\begin{comment}
+
+\titleformat{name=\chapter, numberless}[display]
+%{\vskip-4\baselineskip\itshape\large\filcenter}
+{\vskip-1\baselineskip\bfseries\itshape\LARGE}%
+{}%
+{0.5pc}%
+{\vspace{0.5pc}#1}%
+[\ifbool{addtoc}{\addcontentsline{toc}{chapter}{#1}}]%
+\titlespacing{name=\chapter, numberless}{0pt}{0\baselineskip}{2\baselineskip}
+%\titlespacing{name = \chapter, numberless}{0pt}{0\baselineskip}{2\baselineskip}
+	content...
+\end{comment}
+
+
+
+%------------------------------------------------------------------------------------
+%------Settings for the table of contents-------------------------------------------
+%------Fill with dots for chapter, section and subsections------------------------- 
+%------------------------------------------------------------------------------------
+
+\makeatletter
+\titlecontents{chapter}%
+[0em]% 
+{\addvspace{0.2em}}%
+{\@chapapp\ \thecontentslabel\quad}% 
+{\hspace{0em}}% 
+{\dotfill\contentspage}% 
+[\addvspace{0pt}]% 
+
+\g@addto@macro\appendices{%
+	\addtocontents{toc}{\protect\renewcommand{\protect\@chapapp}{\appendixname}}%
+}
+\makeatother
+
+
+
+
+%
+\titlecontents{section}[4.75em]{\smallskip}%
+{\contentslabel[\thecontentslabel]{2em}}%numbered
+{\hspace*{-1em}}%numberless
+%{\hfill\contentspage}[\smallskip]%
+{\dotfill\contentspage}[\smallskip]%
+%
+\titlecontents{subsection}[7em]{}%
+{\contentslabel[\thecontentslabel]{2.75em}}%numbered
+{\hspace*{-1em}}%numberless
+%{\hfill\contentspage}[\smallskip]
+{\dotfill\contentspage}[\smallskip]
+%------------------------------------------------------------------------------------
+%------Table of contents name and fonts is configured here --------------------------
+%------------------------------------------------------------------------------------
+\renewcommand*{\contentsname}{Contents}%
+\apptocmd{\tableofcontents}{\booltrue{addtoc}}{}{}
+
+%\providecommand\frontmatter{\renewcommand\thepage{\scshape\mdseries\roman{page}}}%
+%\providecommand\mainmatter{\clearpage\pagenumbering{arabic}}
+
+%----------------------------------------------------------------------------
+%----The Name and the font of List of Figures(LOF) and List of Table(LOT)---- 
+%----is configured here------------------------------------------------------
+%----------------------------------------------------------------------------
+%\renewcommand*{\listfigurename}{\itshape{List of Figures}}
+%\renewcommand*{\listtablename}{\itshape{List of Tables}}
+
+
+
+%-----------------------------------------------------------------------------------------
+%------The Package xeCJK is used to type chinese characters together with english---------
+%---------Please use xelatex compiler instead of latex------------------------------------
+%--------In TexStudio go to---------------------------------------------------------------
+%------- Options->Configure TexStudio->Build->Default Comiler[Select xeLatex or LuaLatex]- ------------------------------------------------------------------------------------------
+%------Chinese---------------------
+\usepackage{xeCJK}
+\setCJKmainfont{DFKai-SB}
+%\usepackage{ctex}
+%---------------------------
+
+%----------library to set space with singlespace----------------
+\usepackage{setspace}
+
+%--------------------------------------------------------------
+%----------Define Page Geometry--------------------------------
+%--------------------------------------------------------------
+\usepackage[top=3cm,bottom=2.5cm,left=3cm,right=2cm]{geometry}
+
+
+%---------------------------------------------------------------------------------------------
+%----The Package fancyhrd is used to define the header of the document------------------------
+%----Note: There is some sort of package dependency between fancyhdr and titlesec, microtype--
+%----------Therefore the package fancyhdr has to be included after last-----------------------                
+%---------------------------------------------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{Overleaf}
+%\lhead{Guides and tutorials}
+%\fancyhead[LE,RO]{\chaptername \hspace{0.1cm} \thechapter }%\leftmark
+%\fancyhead[LE,RO]{\nouppercase{\rightmark}}%\leftmark
+\fancyhead[LE,RO]{\nouppercase{\leftmark}}%\leftmark
+%\fancyhead[LE,RO]{\chaptermark}%\leftmark
+
+\fancyfoot[C]{\thepage}
+%\fancyfoot[CE,CO]{\leftmark}
+%\fancyfoot[LE,RO]{\thepage}
+%\rfoot{Page \thepage}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+%\rfoot{Page \thechapter}
+%\pagestyle{fancyplain} %eigener Seitenstil
+%\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+%\fancyhead[L]{Titel} %Kopfzeile links
+%\fancyhead[C]{} %zentrierte Kopfzeile
+%\fancyhead[R]{Name} %Kopfzeile rechts
+%\renewcommand{\headrulewidth}{2pt} %obere Trennlinie
+%\renewcommand{\footrulewidth}{1pt}
+%----------------------------------------------------------------------------
+%--------------This part is necesary to customize the header ----------------
+%------------- pages with style plain(Chapter page, Aknoledgement, etc)------
+%----------------------------------------------------------------------------
+\pagestyle{fancyplain} %eigener Seitenstil
+%\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+\fancyhead[LE,RO]{\nouppercase{\leftmark}} %Kopfzeile links
+%\fancyhead[C]{} %zentrierte Kopfzeile
+%\fancyhead[R]{Name} %Kopfzeile rechts
+%\renewcommand{\headrulewidth}{2pt} %obere Trennlinie
+\renewcommand{\plainheadrulewidth}{2pt}
+\renewcommand{\plainfootrulewidth}{1pt}
+
+%----------------------------------------------------------------------------
+%----------------Change the name and font of the reference------------------
+%----------------------------------------------------------------------------
+%\addcontentsline{toc}{chapter}{Bibliografía}
+%\bibliographystyle{plainnat}
+\renewcommand*{\bibname}{Reference}
+
+
+
+%----------To use with algorithm2e-----------------------------------------
+\usepackage{xcolor}
+%%% Coloring the comment as blue
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+\SetKwInput{KwInput}{Input}                % Set the Input
+\SetKwInput{KwOutput}{Output}              % set the Output
+%----------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------
+%----------------END--------------------------------------------------------
+%----------------------------------------------------------------------------

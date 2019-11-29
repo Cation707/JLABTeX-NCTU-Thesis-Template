@@ -1,0 +1,24 @@
+	\chapter{One way to write algorithms}
+	
+	\begin{algorithm}
+		\DontPrintSemicolon
+		\KwInput{Codeword from channel with the i$th$ element equal to $L(P_{V_i}^{int})$}
+		\KwOutput{Decoded message $\hat{V}$ with the i$th$ element equal to $\hat{V_i}$}
+		%\KwData{Testing set $x$}
+		\tcp{Just comment this comment and the above Input and Output if not needed them}
+		\textbf{Initialization:}\\
+		\For {each $V_i$ in $\mathcal{V}$ }{
+			$V_i$ = $L(P_{v_i}^{int})$
+		}
+		\textbf{Decoding:}\\
+		\For {t = 1,..,Max Iterations}{
+			\For {m = 1,..,Sub Iterations}{
+				\textbf{Check Node Processing:}\\
+				do something based on Eqn. (\ref{eq1})\\
+				\textbf{Variable Node Processing:}\\
+				Calculate $\gamma$ based on Eqn. (\ref{eq2})\\
+				Check fo rearly termination or continue util max iter
+			}
+		}	
+		\caption{Name of the Algorithm}
+	\end{algorithm}

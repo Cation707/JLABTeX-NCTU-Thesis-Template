@@ -1,0 +1,127 @@
+\documentclass[12pt, a4paper, oneside]{book}
+\usepackage{fontspec}
+\setromanfont{Times New Roman}
+%----------------------------------------------
+%-------Thesis Author and Title---------------
+%----------------------------------------------
+% thesis information
+\def\universityCh{國立交通大學}
+\def\universityEn{National Chiao Tung University}
+\def\collegeCh{資訊學院}
+\def\collegeEn{College of Electrical and Computer Engineering}
+\def\instituteCh{電子研究所}
+\def\instituteEn{Institute of Electronics}
+\def\degree{Master of Science in Electronics Engineering}
+\def\titleCh{毫米波頻帶之單一使用者多輸入多輸出混合式預編碼與結合器設計}
+\def\titleEn{Design of mmWave Hybrid Precoder and Combiner for SU-MIMO Systems }
+\def\studentCh{李財華}
+\def\studentEn{Tsai Hua Lee}
+\def\advisorCh{周世傑}
+\def\advisorEn{Shyh-Jye Jou}
+\def\CoadvisorCh{劉志尉} %Problem Coadvisor
+\def\CoadvisorEn{Chih-Wei Liu}
+\def\City{Hsinchu}
+\def\defenseYear{2017}
+\def\defenseYearROC{106}
+\def\defenseMonth{9}\def\defenseMonthEn{September}
+%--------Basic settings--------------------------------------
+%\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage[noend]{algpseudocode}
+\usepackage{cite}  
+\usepackage{comment}
+
+
+
+%--------------------------------------------------------------
+%----------Define some Text and Fontsize-----------------------
+%--------------------------------------------------------------
+\newcommand{\TSzThirtyEight}{\fontsize{38}{50}}
+\newcommand{\TSzTwentyEight}{\fontsize{28}{30}}% 
+\newcommand{\TSzTwenty }{\fontsize{20}{30}}% 
+\newcommand{\TSzEighteen}{\fontsize{18}{20}}
+\newcommand{\TSzSixteen}{\fontsize{16}{20}}%
+\newcommand{\TSzFourteen}{\fontsize{14}{20}}% 
+\newcommand{\TSzTwelveThirty}{\fontsize{12}{30}}% 
+\newcommand{\TSzTwelveTwenty}{\fontsize{12}{20}}%
+
+%--------------------------------------------------------------
+%----------Advanced settings for this thesis ------------------
+%--------------------------------------------------------------
+\input{preambleSetting/advancedPreambleSettings.tex}
+\input{preambleSetting/setChineseBoldface.tex} %How to use: \CJKfakebold{可复制}
+%------------------------------------------------------------------------------
+
+%------Set the Watermark---------------
+% watermark
+% graphics
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{background}
+	\backgroundsetup{
+		contents={\includegraphics[width=13cm,height=13cm]{logo.jpg}},
+		scale=1,
+		opacity=0.4,
+		angle=0
+	}
+
+\begin{document}
+
+
+	\input{covers/coverOuter.tex}
+	\input{covers/coverInner.tex}
+
+    %--------------------------------------------------------------------
+    %This is the Front Matter with Roman Numbering
+    % Use Roman for Uppercase numbering or roman for lowercase numbering
+    %-------------------------------------------------------------------
+    \frontmatter
+    %pagestyle{plain} %Use Plain style for absracts, TOC, LOF and LOT
+    \pagenumbering{Roman}
+
+    \input{abstracts/AbstractCh.tex}
+    \input{abstracts/AbstractEn.tex}
+    \input{acknoledgements/acknoledgements.tex}
+
+    \tableofcontents
+    \addcontentsline{toc}{chapter}{Content}
+
+
+	 
+	 {
+	\let\oldnumberline\numberline%
+	\renewcommand{\numberline}{\figurename~\oldnumberline}
+	\listoffigures
+	}
+	{
+	\let\oldnumberline\numberline%
+	\renewcommand{\numberline}{\tablename~\oldnumberline}
+	\listoftables
+	}
+	
+	%\chapter*{List of Abbreviations}
+	%List of abbreviations goes here!
+	
+	\mainmatter 
+	%--------------------------------------------------------------------
+	%This is the Main Matter with Arabic Numbering
+	%-------------------------------------------------------------------
+	\input{chapters/introduction.tex}
+	\input{chapters/background.tex}
+	\input{chapters/design.tex}
+	%\input{chapters/implementation.tex}
+	\input{chapters/evaluation.tex}
+	\input{chapters/howtoCitations.tex}
+	\input{chapters/writeAlgorithm.tex}
+	\input{chapters/conclusion.tex}
+	
+
+	\begin{appendices}
+		\input{appendix/appendixA.tex}
+	\end{appendices}
+	
+	\input{references/references.tex}
+	
+	
+\end{document}
